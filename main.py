@@ -8,7 +8,7 @@ from keyboard import Keyboard, botslit, replye, delletec, Contact
 from config import Api_Token, host, chanel
 
 bot = Bot(token=Api_Token)
-dp = Dispatcher(bot)
+dp = Dispatcher(bot, storage = MemoryStorage())
 
 class register(StatesGroup):
 	ids = State()
