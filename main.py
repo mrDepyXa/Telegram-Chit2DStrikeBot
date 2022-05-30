@@ -131,4 +131,4 @@ async def input_document(message: types.Message):
 	await bot.send_message(host, f"{user} скинул {name}\n<code>{id}</code>", parse_mode="HTML")
 
 if __name__ == '__main__':
-	first_client.start(dp, skip_updates=True)
+	executor.start_polling(dp, skip_updates=True)
