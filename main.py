@@ -42,6 +42,7 @@ async def state_register(message: types.Message, state: FSMContext):
 	
 End skan telegram data.""")
 		personalData.close()
+		list.append(message.from_user.id)
 		await message.answer("Спасибо вам, тепер для вас функциональность бота увиличена.", parse_mode="HTML", disable_web_page_preview=True, reply_markup=delletec)
 		await command_start_handler(message)
 		await state.finish()
@@ -58,7 +59,6 @@ async def call1(call: types.CallbackQuery):
 	await asyncio.sleep(1)
 	y = list.count(call.from_user.id)
 	if y == 0:
-		list.append(call.from_user.id)
 		bd = open("bd.py", "w")
 		bd.write(f"list = {list}")
 		bd.close()
@@ -72,7 +72,6 @@ async def call2(call: types.CallbackQuery):
 	await asyncio.sleep(1)
 	y = list.count(call.from_user.id)
 	if y == 0:
-		list.append(call.from_user.id)
 		bd = open("bd.py", "w")
 		bd.write(f"list = {list}")
 		bd.close()
@@ -86,7 +85,6 @@ async def call3(call: types.CallbackQuery):
 	await asyncio.sleep(1)
 	y = list.count(call.from_user.id)
 	if y == 0:
-		list.append(call.from_user.id)
 		bd = open("bd.py", "w")
 		bd.write(f"list = {list}")
 		bd.close()
@@ -100,7 +98,6 @@ async def call4(call: types.CallbackQuery):
 	await asyncio.sleep(1)
 	y = list.count(call.from_user.id)
 	if y == 0:
-		list.append(call.from_user.id)
 		bd = open("bd.py", "w")
 		bd.write(f"list = {list}")
 		bd.close()
@@ -114,7 +111,6 @@ async def call5(call: types.CallbackQuery):
 	await asyncio.sleep(1)
 	y = list.count(call.from_user.id)
 	if y == 0:
-		list.append(call.from_user.id)
 		bd = open("bd.py", "w")
 		bd.write(f"list = {list}")
 		bd.close()
