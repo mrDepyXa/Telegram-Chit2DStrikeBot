@@ -57,10 +57,12 @@ async def call0(call: types.CallbackQuery):
 @dp.callback_query_handler(text='1')
 async def call1(call: types.CallbackQuery):
 	await asyncio.sleep(1)
-	y = list.count(call.from_user.id)
+	y = listi.count(call.from_user.id)
 	if y == 0:
+		listi.append(call.from_user.id)
 		bd = open("bd.py", "w")
-		bd.write(f"list = {list}")
+		bd.write(f"""list = {list}
+listi {listi}""")
 		bd.close()
 		await bot.send_message(chanel, f"<a href='tg://user?id={call.from_user.id}'>ID</a>/@{call.from_user.username} скачал чити, спасибо что воспользовалися нашим ботом!\n{call.from_user.language_code}", parse_mode="HTML")
 	else:
@@ -70,10 +72,12 @@ async def call1(call: types.CallbackQuery):
 @dp.callback_query_handler(text="2")
 async def call2(call: types.CallbackQuery):
 	await asyncio.sleep(1)
-	y = list.count(call.from_user.id)
+	y = listi.count(call.from_user.id)
 	if y == 0:
+		listi.append(call.from_user.id)
 		bd = open("bd.py", "w")
-		bd.write(f"list = {list}")
+		bd.write(f"""list = {list}
+listi {listi}""")
 		bd.close()
 		await bot.send_message(chanel, f"<a href='tg://user?id={call.from_user.id}'>ID</a>/@{call.from_user.username} скачал чити, спасибо что воспользовалися нашим ботом!\n{call.from_user.language_code}", parse_mode="HTML")
 	else:
@@ -83,10 +87,12 @@ async def call2(call: types.CallbackQuery):
 @dp.callback_query_handler(text="3")
 async def call3(call: types.CallbackQuery):
 	await asyncio.sleep(1)
-	y = list.count(call.from_user.id)
+	y = listi.count(call.from_user.id)
 	if y == 0:
+		listi.append(call.from_user.id)
 		bd = open("bd.py", "w")
-		bd.write(f"list = {list}")
+		bd.write(f"""list = {list}
+listi {listi}""")
 		bd.close()
 		await bot.send_message(chanel, f"<a href='tg://user?id={call.from_user.id}'>ID</a>/@{call.from_user.username} скачал чити, спасибо что воспользовалися нашим ботом!\n{call.from_user.language_code}", parse_mode="HTML")
 	else:
@@ -96,10 +102,12 @@ async def call3(call: types.CallbackQuery):
 @dp.callback_query_handler(text="4")
 async def call4(call: types.CallbackQuery):
 	await asyncio.sleep(1)
-	y = list.count(call.from_user.id)
+	y = listi.count(call.from_user.id)
 	if y == 0:
+		listi.append(call.from_user.id)
 		bd = open("bd.py", "w")
-		bd.write(f"list = {list}")
+		bd.write(f"""list = {list}
+listi {listi}""")
 		bd.close()
 		await bot.send_message(chanel, f"<a href='tg://user?id={call.from_user.id}'>ID</a>/@{call.from_user.username} скачал чити, спасибо что воспользовалися нашим ботом!\n{call.from_user.language_code}", parse_mode="HTML")
 	else:
@@ -109,10 +117,12 @@ async def call4(call: types.CallbackQuery):
 @dp.callback_query_handler(text="5")
 async def call5(call: types.CallbackQuery):
 	await asyncio.sleep(1)
-	y = list.count(call.from_user.id)
+	y = listi.count(call.from_user.id)
 	if y == 0:
+		listi.append(call.from_user.id)
 		bd = open("bd.py", "w")
-		bd.write(f"list = {list}")
+		bd.write(f"""list = {list}
+listi {listi}""")
 		bd.close()
 		await bot.send_message(chanel, f"<a href='tg://user?id={call.from_user.id}'>ID</a>/@{call.from_user.username} скачал чити, спасибо что воспользовалися нашим ботом!\n{call.from_user.language_code}", parse_mode="HTML")
 	else:
